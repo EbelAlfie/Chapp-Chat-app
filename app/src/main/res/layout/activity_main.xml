@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Email"
+        android:padding="5dp"
+        android:background="@drawable/edittext_style"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/userName"
+        android:background="@drawable/edittext_style"
+        android:padding="5dp"
+        android:inputType="textPassword"
+        android:hint="password" />
+
+    <TextView
+        android:id="@+id/signUpNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:layout_marginVertical="20dp"
+        android:layout_below="@id/password"/>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signUpNav"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_style"
+        android:text="Login"
+        style="@style/Widget.AppCompat.Button"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>
